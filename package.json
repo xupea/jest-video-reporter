@@ -1,0 +1,28 @@
+{
+  "name": "jest-video-reporter",
+  "version": "1.0.5",
+  "description": "Jest test results processor for generating a summary in video",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/xupea/jest-video-reporter#readme",
+  "keywords": [
+    "jest",
+    "video",
+    "reporter",
+    "plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xupea/jest-video-reporter.git"
+  },
+  "author": {
+    "name": "Peter Xu",
+    "email": "sysu.peter.hsu@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/xupea/jest-video-reporter/issues"
+  },
+  "license": "MIT"
+}
