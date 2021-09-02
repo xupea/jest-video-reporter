@@ -2,9 +2,10 @@ const { spawn } = require("child_process");
 const path = require('path');
 
 class VideoRecorder {
-  constructor(fileName) {
+  constructor(fileName, input) {
     const filePath = path.resolve(process.cwd(), fileName);
     this.videoPath = filePath;
+    this.input = input;
   }
 
   start() {
@@ -12,14 +13,18 @@ class VideoRecorder {
       "-f",
       "avfoundation",
       "-i",
-      "1:0",
+      this.input,
       this.videoPath,
     ]);
   }
 
   stop() {
     if (this.ffmpeg) {
-      this.ffmpeg.kill("SIGINT");
+      try {
+        this.ffmpeg.kill("SIGINT");
+      } catch(e) {
+        //ignore
+      }
     }
   }
 }

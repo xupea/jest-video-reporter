@@ -13,7 +13,8 @@ Configure Jest to process the test results by adding the following entry to the 
 "reporters": [
 	"default",
 	["jest-video-reporter", {
-		"fileName": "result.mkv"
+		"fileName": "result.mkv",
+		"input: "0:0"
 	}]
 ]
 ```
