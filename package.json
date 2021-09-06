@@ -1,10 +1,11 @@
 {
   "name": "jest-video-reporter",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Jest test results processor for generating a summary in video",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "jest"
   },
   "homepage": "https://github.com/xupea/jest-video-reporter#readme",
   "keywords": [
@@ -13,6 +14,15 @@
     "reporter",
     "plugin"
   ],
+  "devDependencies": {
+    "@jest/reporters": "^27.1.0",
+    "@types/jest": "^27.0.1",
+    "jest": "^27.1.0",
+    "ts-jest": "^27.0.5",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.4.2",
+    "webpack": "^5.51.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xupea/jest-video-reporter.git"
