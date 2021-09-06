@@ -5,7 +5,7 @@ import {
   ReporterOnStartOptions,
 } from "@jest/reporters";
 
-import VideoRecorder from "./videoRecorder";
+import VideoRecorder from "@/videoRecorder";
 
 class CustomVideoReporter implements Reporter {
   recorder: VideoRecorder;
